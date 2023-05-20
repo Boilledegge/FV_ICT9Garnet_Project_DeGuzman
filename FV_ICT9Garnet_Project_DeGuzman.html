@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Project</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>    
+    <br>
+    <div class="container  bg-warning">
+        <h1 style="text-align: center;color:#422621;">Unit Converter</h1>
+        <br>
+        <h2 style="color: #422621;"><center>Select Measurement</center></h2>
+        <br>
+        <h2 style="color: #422621;"><center>Milimeters</center></h2>
+
+    <br>
+    </div>
+    <div class="container bg-danger">
+        <table class="table">
+        <tr>
+            <th style="text-align:center;">
+                <p><input type="text" id="Milimeters"></p>
+            <input type="button" class="btn btn-success" onClick="Centimeters()" value="Centimeters">
+            <br>
+            <br>
+            <input type="button" class="btn btn-primary" onClick="Kilometers()" value="Kilometers">
+            <br>
+            <br>
+            <input type="button" class="btn btn-warning" onClick="Meters()" value="Meters">
+            <br>
+            <br>
+            </th>
+        </tr>
+    </table>
+    </div>
+<script>
+    function Centimeters(){
+        let x = (document.getElementById('Milimeters').value);
+        let y = 0.1;     
+        alert(x * y);
+    }
+    function Kilometers(){
+        let x = (document.getElementById('Milimeters').value);
+        let y = 0.000001;       
+        alert(x * y);
+    }
+
+    function Meters(){
+        let x = (document.getElementById('Milimeters').value);
+        let y = 0.001;      
+        alert(x * y);
+    }
+</script>
+</body>
+</html>
